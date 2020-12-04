@@ -17,7 +17,7 @@ args = vars(ap.parse_args())
 # ? If the video argument is NONE then we're reading from webcam
 if args.get("video", None) is None:
     vs = VideoStream(src=0).start()
-    time.sleep(2.0)
+    # time.sleep(2.0)
 else:  # ? otherwise, we're reading from the provided file
     vs = cv2.VideoCapture(args["video"])
 
